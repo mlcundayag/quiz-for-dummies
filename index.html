@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="./assets/css/style.css">
+    <title>Quiz for Dummies</title>
+</head>
+
+<body>
+    <header>
+        <h1>Quiz for dummies</h1>
+        <div>Time: remaining: <span id="timer">60</span></div>
+    </header>
+
+    <main>
+        <div class="start-card">
+            <button id="quiz-button" class="btn" onclick="startQuiz()">Start</button>
+        </div>
+
+        <div id="highscores">
+            <button id="try-again" class="btn">Try Again</button>
+            <button id="reset">Reset Scores</button>
+        </div>
+
+        <div id="container" class="card">
+            <h2 id="question"></h2>
+            <button id="choice1" class="btn"></button>
+            <button id="choice2" class="btn"></button>
+            <button id="choice3" class="btn"></button>
+            <button id="choice4" class="btn"></button>
+        </div>
+
+        <div id="results-card" class="card">
+            <h2>Finished</h2>
+            <p>You got <span id="score"></span> out of 50</p>
+            <label for="initials">Enter your initials: </label>
+            <input type="text" id="initials" size="4">
+            <button id="submit" class="btn"></button>
+        </div>
+    </main>
+    <footer>
+        <h3>@mundayag2022</h3>
+    </footer>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
