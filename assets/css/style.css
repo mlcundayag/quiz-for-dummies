@@ -30,11 +30,11 @@ main {
     align-items: center;
 }
 
-main.correct {
+.correct {
     --hue: var(--hue-correct);
 }
 
-main.wrong {
+.wrong {
     --hue: var(--hue-wrong);
 }
 
