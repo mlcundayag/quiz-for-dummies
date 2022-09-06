@@ -273,4 +273,9 @@ hr {
     .btn {
         font-size: 100%;
     }
+
+    .btn-box {
+        display: flex;
+        flex-direction: column;
+    }
 }
