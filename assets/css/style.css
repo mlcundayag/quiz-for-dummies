@@ -159,12 +159,8 @@ main {
     padding: 5px 10px;
     color: white;
     outline: none;
-    padding:.5rem 1rem;
-    font-size:1.25rem;
+    font-size: 120%;
     line-height:1.5;
-    border-radius:.3rem;
-    padding-right:.75rem;
-    padding-left:.75rem
 }
 
 .btn:hover{
@@ -245,3 +241,36 @@ hr {
         padding: 5% 1%;
     }    
 }  
+
+@media screen and (max-width: 575px) {
+    header {
+        margin-top: 5%!important;
+    }
+
+    h1, h2 {
+        font-size: 120%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+    
+    .left, .right {
+        flex: 0 0 50%;
+        max-width: fit-content;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left {
+        align-self: flex-end;
+    }
+
+    #start-card, #quiz, #input-score, #high-scores {
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 100%;
+    }
+}

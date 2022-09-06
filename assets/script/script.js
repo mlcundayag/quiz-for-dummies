@@ -93,7 +93,7 @@ function displayMessage(m) {
             messageEl.remove();
             elementColor.classList.remove("wrong");
             elementColor.classList.remove("correct");
-    }, 1500);
+    }, 700);
 
 }
 
