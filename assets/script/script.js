@@ -31,10 +31,6 @@ var timeLeft = 0;
 var messageLine = document.createElement("hr");
 var messageEl = document.createElement("div");
 var elementColor = document.querySelector("body");
-var today = new Date()
-var date = `${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`;
-var time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`
-var dateTime = `${date} @ ${time}` 
 
 //starts and updates timer
 function startTimer() {
@@ -180,7 +176,7 @@ choicesEl.addEventListener("click", function (e) {
 submitInitialsButtonEl.addEventListener("click", function () {
     let initValue = initialsEl.value.trim();
     if (initValue) {
-        let userScore = { username: initValue, userScore: score};
+        let userScore = { username: initValue, userScore: score };
         initialsEl.value = '';
         highScores = JSON.parse(localStorage.getItem("scores")) || [];
         highScores.push(userScore)
